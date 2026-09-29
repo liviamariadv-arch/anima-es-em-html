@@ -1,0 +1,188 @@
+.palcoVert{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    border-bottom: 5px solid black;
+    background-color: #D8BFD8;
+}
+
+.bolaVert{
+     position: absolute;
+    bottom: 0;
+    left: 120px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(121, 10, 78);
+    border-radius: 50%;
+    animation: quicar 1s infinite;
+}
+
+@keyframes quicar{
+     0%, 100%{
+        transform: translateY(0) scaleX(1.2) scaleY(0.8);
+    }
+
+    50%{
+        transform: translateY(-200px) scaleX(0.8) scaleY(1.2);
+    }
+}
+
+
+
+.palcoHori{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    border-bottom: 5px solid black;
+    background-color: #D8BFD8;
+}
+
+.bolaHori{
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(121, 10, 78);
+    border-radius: 50%;
+     animation:mover 3s infinite alternate
+}
+
+@keyframes mover{
+     from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform: translateX(100px);
+    }
+}
+
+
+.palcoDiag{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    border-bottom: 5px solid black;
+    background-color: #D8BFD8;
+}
+
+.bolaDiag{
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(121, 10, 78);
+    border-radius: 50%;
+    animation: deslizar 5s infinite alternate;
+}
+
+@keyframes deslizar{
+    from{
+        transform: translateX(100px);
+    }
+
+    to{
+        transform: translateY(-100px);
+    }
+}
+
+
+.palcoHov{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    border-bottom: 5px solid black;
+    background-color: #D8BFD8;
+}
+
+.bolaHov{
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(121, 10, 78);
+    border-radius: 50%;
+    animation: pular 1s infinite alternate;
+}
+
+
+@keyframes pular{
+     0%, 100%{
+        transform: translateY(0) scaleX(1.2) scaleY(0.8);
+    }
+
+    50%{
+        transform: translateY(-200px) scaleX(0.8) scaleY(1.2);
+    }
+}
+
+.palcoHov:hover{
+    color: rgb(121, 10, 78);
+    background-color: blue;
+}
+
+
+.palcoPause{ 
+    position: relative; 
+    width: 300px; 
+    height: 300px; 
+    margin-top: 20px; 
+    border-bottom: 5px solid black; 
+    background-color: #D8BFD8; 
+} 
+ 
+.bolaPause{ 
+    position: absolute; 
+    bottom: 0; 
+    left: 120px; 
+    width: 40px; 
+    height: 40px; 
+    background-color: rgb(121, 10, 78); 
+    border-radius: 50%; 
+    animation: andar 1s infinite alternate; 
+} 
+ 
+@keyframes andar{ 
+    from{ 
+        transform: translateX(0); 
+    } 
+ 
+    to{ 
+        transform: translateX(100px); 
+    } 
+} 
+ 
+.palcoPause:hover .bolaPause{ 
+    animation-play-state: paused; 
+}
+
+.palcoActive{
+    position: relative; 
+    width: 300px; 
+    height: 300px; 
+    margin-top: 20px; 
+    border-bottom: 5px solid black; 
+    background-color: #D8BFD8; 
+}
+
+.bolaActive{
+    position: absolute; 
+    bottom: 0; 
+    left: 120px; 
+    width: 40px; 
+    height: 40px; 
+    background-color: rgb(121, 10, 78); 
+    border-radius: 50%; 
+    animation: quicar 5s infinite alternate; 
+}
+
+.palcoActive:active{
+    background-color: black;
+}
